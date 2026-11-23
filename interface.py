@@ -4,6 +4,10 @@ import requests
 from requests.exceptions import ConnectionError
 import logging
 import os
+from dotenv import load_dotenv
+
+# Carga variables de entorno desde .env local (Factor 3: Config)
+load_dotenv()
 
 logger = logging.getLogger(__name__)
 
